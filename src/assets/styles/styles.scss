@@ -1,0 +1,14 @@
+@import "abstracts/variables";
+
+body {
+    background: $black;
+    color: $white;
+}
+* {
+    outline: none !important;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

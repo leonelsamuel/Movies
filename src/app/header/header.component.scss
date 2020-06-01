@@ -1,0 +1,36 @@
+@import "abstracts/variables";
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: $black-soft;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo {
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $green
+        }
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+    }
+}
